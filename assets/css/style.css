@@ -1,0 +1,244 @@
+:root {
+    --btn-background-color: #64C5DA;
+    --background-color: #FAFAFA;
+    --border-color: #e2dfdf;
+    --success-color: #25b831;
+    --error-color: #ec4714;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppin', sans-serif;  
+}
+body {
+    background-color: #E4E4E5;
+    min-height: 100vh;
+    padding: 25px 0 0;
+}
+.container {
+    margin: 0 auto;
+    width: 454px;
+    max-height: 680px;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    box-shadow: 6px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Header */
+
+.header {
+    text-align: center;
+}
+.header-logo {
+    width: 300px;
+    margin-top: 20px;
+}
+.header-title {
+    font-size: 18px;
+    color: #3d3c3c;
+    padding-bottom: 20px;
+}
+
+
+/* Form */
+
+.container form {
+    margin: 25px 40px 20px;
+}
+
+.input-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 18px 0;
+    border: none;
+}
+.label {
+    width: 30%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #242424;
+}
+.input-groups {
+    flex: 1;
+}
+.input {
+    width: 100%;
+    padding: 8px 10px;
+    border: .5px solid var(--border-color);
+    outline: none;
+    border-radius: 2px;
+    
+}
+.input-err {
+    position: absolute;
+    margin-top: 2px;
+    font-size: 12px;
+    color: var(--error-color);
+    display: none;
+}
+.success input {
+    border: 2px solid var(--success-color);
+}
+.error input {
+    border: 2px solid var(--error-color);
+}
+.input-groups.error .input-err {
+    display: block;
+}
+
+
+/* Position */
+.position__input {
+    cursor: pointer;
+    color: #242323;
+}
+
+.position__icon {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: #7a7979;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown:hover .dropdown-menu{
+    visibility: visible;
+}
+.dropdown::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    bottom: -5px;
+}
+.dropdown-menu {
+    position: absolute;
+    width: 100%;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    visibility: hidden;
+}
+.dropdown-list {
+    margin: 0;
+    list-style: none;
+}
+.dropdown-list__item {
+    padding: 12px 10px;
+    font-size: 13px;
+}
+.dropdown-list__item:hover {
+    background-color: var(--btn-background-color);
+}
+
+
+/* Experience */
+.experience {
+    display: flex;
+    align-items: start;
+}
+.exprience__input {
+    height: 100px;
+}
+
+/* File */
+
+.file{
+    display: flex;
+    justify-content: center;
+    color: #525050;
+}
+.file-container {
+    cursor: pointer;
+}
+.file span {
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+/* Button submit */
+.btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px;
+}
+.btn-submit {
+    border-radius: 5px;
+    background-color: var(--btn-background-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-submit:hover {
+    background-color: #097891;
+}
+
+
+/* Notify */
+
+/* .notify {
+    text-align: center;
+    visibility: hidden;
+}
+.hide {
+    visibility: none;
+}
+.notify-check__checked:checked ~ .notify {
+    visibility: hidden;
+}
+.notify__overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    animation: fadeIn linear .2s;
+}
+.notify__container {
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; 
+    margin-left: -15em; 
+    border: 1px solid #ccc;
+    background-color: var(--background-color);
+}
+
+.notify-icon__exit {
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #525050;
+}
+
+.notify-logo {
+    
+}
+.notify-title {
+    font-style: italic;
+    color: #525050;
+}
+.notify-icon__success {
+    margin-top: 20px;
+    color: var(--success-color);
+    font-size: 50px;
+} */

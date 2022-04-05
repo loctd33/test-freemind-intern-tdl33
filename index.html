@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Freemind-Test-Intern</title>
+    <script src="https://kit.fontawesome.com/feee232f9b.js" crossorigin="anonymous"></script>
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/event.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <img class="header-logo" src="./assets/img/logo1.png" alt="logo">
+            <h3 class="header-title">Hãy gửi CV của bạn cho chúng tôi</h3>
+        </header>
+
+        <hr width="100%" size="5px" color="#41454C"/>
+
+        <!-- Form -->
+        <form id="form">
+            <!-- Name -->
+            <div class="name input-field">
+                <label class="name__label label ">Tên của bạn</label>
+                <div class="input-groups">
+                    <input class="name__input input" type="text" placeholder="Ví dụ: Nguyễn Văn A">
+                    <div class="input-err">err</div>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="phone input-field">
+                <label class="phone__label label">Số điện thoại</label>
+                <div class="input-groups">
+                    <input class="phone__input input" type="text" placeholder="Số điện thoại liên lạc">
+                    <div class="input-err">err</div>
+                </div>
+            </div>
+
+            <!-- Position -->
+            <div class="position input-field ">
+                <label class="position__label label">Vị trí</label>
+                <div class="input-groups dropdown">
+                    <input class="position__input input" disabled type="text" placeholder="Junior Ecommerce Web Developer">
+                    <i class="position__icon fa-solid fa-angle-down"></i>
+                    <div class="input-err">err</div>
+
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-list">
+                            <li class="dropdown-list__item">Junior Ecommerce Web Developer</li>
+                            <li class="dropdown-list__item">Fresher Ecommerce Web Developer</li>
+                            <li class="dropdown-list__item">Senior Ecommerce Web Developer</li>
+                            <li class="dropdown-list__item">Internship</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="experience input-field">
+                <label class="experience__label label">Kinh nghiệm làm việc</label>
+                <div class="input-groups">
+                    <textarea class="exprience__input input" placeholder="Ví dụ: công việc, tên công ty, địa điểm và thời gian bạn làm việc tại đó"></textarea>
+                    <div class="input-err">err</div>
+                </div>
+            </div>
+
+            <div class="file">
+                <input class="file-real" type="file" hidden="hidden">
+                <div class="file-container">
+                    <i class="file-icon fa-solid fa-paperclip"></i>
+                    <span class="file-name">Đính kèm hình ảnh</span>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="email input-field">
+                <label class="email__label label">Email</label>
+                <div class="input-groups">
+                    <input class="email__input input" type="text" placeholder="Ex: contact@freemind.vn">
+                    <div class="input-err">err</div>
+                </div>
+            </div>
+            <div class="btn">
+                <a type="button" class="btn-submit"href="#">Gửi CV cho Freemind</a>
+            </div>
+        </form>
+
+        <!-- <input class="notify-check__checked" type="checkbox" id="notify-check" hidden>
+        <div class="notify">
+            <div class="notify__overlay"></div>
+            <div class="notify__container">
+                <label for="notify-check">
+                    <i class="notify-icon__exit fa-solid fa-xmark"></i>
+                </label>
+
+                <img class="notify-logo" src="./assets/img/logo1.png" alt="logo">
+                <h3 class="notify-title">Cảm ơn bạn đã gửi CV</h3>
+                <i class="notify-icon__success fa-solid fa-circle-check"></i>
+            </div>
+        </div> -->
+
+    </div>
+</body>
+</html>
